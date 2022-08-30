@@ -1,6 +1,4 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600;700&display=swap");
-
 * {
   font-family: "Dosis", Helvetica, sans-serif;
   box-sizing: border-box;
@@ -20,14 +18,13 @@ body {
   margin-right: 2%;
   margin-left: 2%;
   position: relative;
-  margin: 0;
 }
 
 main {
   padding: 30px 30px 0 30px;
 }
 
-#banner {
+#backgroundimage {
   position: relative;
   height: 85vh;
   padding-left: 5%;
@@ -43,12 +40,9 @@ main {
   background-attachment: scroll, fixed;
 }
 
-.navigation-wrapper {
+.navigationbar {
   position: absolute;
   height: 88px;
-  left: 0%;
-  right: 0%;
-  top: 0%;
   bottom: auto;
   background-color: #fff;
   width: 90%;
@@ -56,8 +50,6 @@ main {
   margin-top: 2%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 0%;
-  padding-left: 0%;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
@@ -251,10 +243,9 @@ main {
 
 .social-button-section {
   position: absolute;
-  right: 0;
+ right: 0;
   bottom: 130px;
   padding: 10px;
-  z-index: 0;
   background-color: #0a1229;
   display: flex;
   flex-direction: column;
@@ -306,7 +297,6 @@ main {
 }
 
 .phone-text {
-  margin-top: 0;
   margin-bottom: 10px;
   color: #fff;
   font-size: 13px;
@@ -356,8 +346,6 @@ main {
   color: #121213;
   font-size: 42px;
   position: relative;
-  margin-bottom: 0;
-  margin-top: 0;
   line-height: 50px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -389,7 +377,6 @@ main {
   content: "";
   position: absolute;
   width: 100%;
-  bottom: 0;
   height: 2px;
   background-color: hsla(0, 0%, 100%, 0.3);
   color: #e47312;
@@ -427,7 +414,6 @@ main {
 
 .item-text {
   margin-bottom: 25px;
-  margin-top: 0;
   color: #919197;
   font-size: 17px;
   line-height: 25px;
@@ -545,7 +531,7 @@ main {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
   transition: 0.2s;
-  opacity: 0;
+ opacity: 0;
 }
 
 .project-circle {
@@ -635,7 +621,6 @@ main {
 }
 
 .job-title {
-  margin-bottom: 0;
   color: #bdbdc9;
   font-size: 16px;
 }
@@ -644,8 +629,6 @@ main {
   position: absolute;
   left: auto;
   top: auto;
-  right: 0;
-  bottom: 0;
   background-color: #e47312;
   padding: 10px;
 }
@@ -674,7 +657,6 @@ main {
 .testimonial-text {
   width: 41.66%;
   padding-right: 100px;
-  padding-left: 0;
 }
 
 .testimonial-details {
@@ -686,8 +668,6 @@ main {
 
 .test-details-part {
   width: 50%;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .test-wrapper {
@@ -821,7 +801,6 @@ main {
 }
 
 .smaller-white-blog {
-  margin-right: 0;
   margin-bottom: 15px;
   font-size: 19px;
   line-height: 26px;
@@ -831,7 +810,6 @@ main {
 .for-blog {
   font-size: 17px;
   line-height: 25px;
-  margin-bottom: 0;
 }
 
 .white-button.for-white {
@@ -841,9 +819,7 @@ main {
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
-  margin-left: 0;
   margin-top: 15px;
-  padding-top: 0;
   padding-bottom: 5px;
 }
 
@@ -858,7 +834,6 @@ main {
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: 0;
   z-index: 100;
   transition: 0.2s;
   background-color: hsla(0, 0%, 100%, 0.3);
@@ -869,7 +844,6 @@ main {
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: 0;
   z-index: 100;
   transition: 0.2s;
   background-color: white;
@@ -971,7 +945,6 @@ footer {
 
 .line {
   position: absolute;
-  left: 0;
   top: 8px;
   right: auto;
   bottom: auto;
@@ -985,7 +958,6 @@ footer {
 }
 
 .in-footer {
-  margin-top: 0;
   margin-bottom: 30px;
   padding-right: 14px;
   background-color: #0a1229;
@@ -1004,20 +976,6 @@ footer {
   line-height: 25px;
   margin-bottom: 10px;
 }
-
-.blue {
-  padding-top: 0;
-  margin-top: 0;
-}
-
-.white-button.for-white.blue::after {
-  background-color: transparent;
-}
-
-.white-button.for-white.blue:hover::after {
-  background-color: white;
-}
-
 .footer-column {
   padding-right: 20%;
 }
@@ -1083,7 +1041,7 @@ footer {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
   main {
     padding: 0;
   }
@@ -1102,13 +1060,12 @@ footer {
     letter-spacing: 11px;
   }
 
-  .navigation-wrapper {
+  .navigationbar {
     position: absolute;
     height: 60px;
     bottom: auto;
     background-color: #fff;
     width: 100%;
-    margin-top: 0;
     max-width: 100%;
   }
   .nav-menu {
@@ -1125,14 +1082,13 @@ footer {
   .humburger-icon i {
     font-size: 28px;
   }
-  #banner {
+  #backgroundimage {
     height: 800px;
     background-position: center center;
     background-size: auto, cover;
     max-width: 100%;
   }
   .social-button-section {
-    bottom: 0;
     z-index: 10;
     padding: 2px;
   }
@@ -1145,11 +1101,7 @@ footer {
     z-index: 2;
     position: absolute;
     right: auto;
-    bottom: 0px;
-    right: 0;
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
   }
   .info-flex {
     z-index: 1;
@@ -1259,9 +1211,6 @@ footer {
     width: 100%;
     padding-left: 40px;
   }
-  .title-desc {
-    margin-left: 0;
-  }
   .testimonial-details {
     width: 100%;
     display: flex;
@@ -1360,34 +1309,25 @@ footer {
   .info-item.horizantal {
     width: 300px;
   }
-  .footer-column {
-    padding-right: 0;
-  }
-  .title-desc {
-    margin-top: 0;
-  }
-  .primary-heading-wrapper {
-    margin-top: 0;
-  }
   #section-container {
     margin-top: 40px;
   }
-}
+}*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   body {
     margin-left: auto;
   }
   .primary-heading-wrapper {
     display: flex;
-    flex-direction: column;
+  flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
   .info-section-view {
     display: none;
   }
-  #banner {
+  #background {
     height: 525px;
   }
   .who-we-disc {
@@ -1412,8 +1352,6 @@ footer {
     margin: 0 auto;
   }
   footer {
-    margin-right: 0px;
-    padding-right: 0px;
     padding-left: 25px;
   }
   .paragraph-white._white1 {
